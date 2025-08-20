@@ -45,13 +45,12 @@ function FixedHeader({ scrolled }) {
 
                 <Box
                     sx={{
-                        display: { xs: 'none', md: 'flex' },
+                        display: { xs: 'none', lg: 'flex' },
                         gap: 4
                     }}
                 >
                     {navLinksList}
                 </Box>
-
                 {/* //////////////////////////icons////////////////////////// */}
 
                 <Box
@@ -92,7 +91,6 @@ function FixedHeader({ scrolled }) {
                             : <Btn btnContent='book your stay' />
                     }
                 </Box>
-
                 {/* //////////////////////////menu////////////////////////// */}
 
                 <Box sx={{ display: { xs: 'flex', sm: 'none' }, pr: 2 }}>
