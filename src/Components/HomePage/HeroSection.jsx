@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from "@mui/material"
 import Btn from "../Btn/Btn"
+import Reveal from "../FramerMotion/Reveal "
 
 function HeroSection() {
     return (
@@ -41,18 +42,25 @@ function HeroSection() {
                 color: 'white',
             }}>
                 {/* /////////////hero-info////////////// */}
-                <Typography variant="h2" sx={{ color: 'white', fontSize: { xs: 45, md: 70 }, fontWeight: 800, letterSpacing: 5 }}>
-                    Book With Best
-                </Typography>
+                {/* /////////,otion animation for header content ////////////////// */}
+                <Reveal type="fade-up">
+                    <Typography variant="h2" sx={{ color: 'white', fontSize: { xs: 45, md: 70 }, fontWeight: 800, letterSpacing: 5 }}>
+                        Book With Best
+                    </Typography>
+                    <Typography variant="h2" sx={{ fontSize: { xs: 45, md: 70 }, fontWeight: 800, letterSpacing: 5, color: 'var(--secondary-color)' }}>
+                        Luxury Hotel
+                    </Typography>
+                </Reveal>
 
-                <Typography variant="h2" sx={{ fontSize: { xs: 45, md: 70 }, fontWeight: 800, letterSpacing: 5, color: 'var(--secondary-color)' }}>
-                    Luxury Hotel
-                </Typography>
                 <Typography variant="body1" sx={{ mt: 2, color: 'white', fontWeight: 300, fontSize: 16.5, maxWidth: { xs: 400, md: 720 }, letterSpacing: 0.5 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rhoncus nunc Duis egestas ac ante sed tincidunt.                </Typography>
                 <Box sx={{ mt: 5, display: "flex", gap: 2 }}>
                     <Btn btnContent='explore more' />
-                    <Btn btnContent='our services' bgColor='white' hoverBgColor='var(--secondary-color)' />
+
+                    {/* /////////motion animation for btn ////////////////// */}
+                    <Reveal type="slide-right">
+                        <Btn btnContent='our services' bgColor='white' hoverBgColor='var(--secondary-color)' />
+                    </Reveal>
                 </Box>
             </Box>
 

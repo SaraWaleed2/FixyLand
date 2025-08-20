@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Grid } from "@mui/material";
 import Btn from "../Btn/Btn";
+import Reveal from "../FramerMotion/Reveal ";
 
 const offers = [
     {
@@ -18,15 +19,17 @@ function DiscountSection() {
     return (
         <Box sx={{ py: 15, backgroundColor: "#f0f8f4" }}>
             <Container>
-                <Box sx={{ textAlign: "center", mb: 5 }}>
-                    <span className="about-span">Special Offers</span>
+                {/* /////////motion animation////////////////// */}
+                <Reveal>
+                    <Box sx={{ textAlign: "center", mb: 5 }}>
+                        <span className="about-span">Special Offers</span>
 
-                    <h2 className='about-title' style={{ fontWeight: 800 }}>
-                        Special Discount for Hotel & <br />
-                        Resort Booking
-                    </h2>
-                </Box>
-                
+                        <h2 className='about-title' style={{ fontWeight: 800 }}>
+                            Special Discount for Hotel & <br />
+                            Resort Booking
+                        </h2>
+                    </Box>
+                </Reveal>
                 {/*/////////////////////////////// Content//////////////////// */}
                 <Grid container spacing={3}>
                     {offers.map((offer, i) => (

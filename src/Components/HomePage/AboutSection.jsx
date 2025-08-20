@@ -1,6 +1,7 @@
 import { Typography, Grid, Container, Box, Avatar } from '@mui/material';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import './HomeStyle.css';
+import Reveal from '../FramerMotion/Reveal ';
 
 function AboutSection() {
     const aboutItems = [
@@ -23,23 +24,27 @@ function AboutSection() {
         <Container maxWidth='xl' sx={{ backgroundColor: "var(--bg-color)", pt: 15 }}>
             <Grid container>
 
-            {/* ////////////////Grid-images/////////////////// */}
+                {/* ////////////////Grid-images/////////////////// */}
 
                 <Grid size={{ xs: 12, md: 6 }} sx={{ textAlign: 'center' }}>
-                    
-                    <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-                        <img src="/src/assets/Images/about-1-1.jpg" alt="" className='about-img' style={{ borderRadius: "20px" }} />
-                        <img src="/src/assets/Images/about-shape.png" className='about-circle' />
-                        <img src="/src/assets/Images/rotate.png" className='circle-rotate' />
-                        <img src="/src/assets/Images/star.png" className='star-icon' />
-                    </Box>
-
+                    {/* /////////////////motion animation////////////// */}
+                    <Reveal type='slide-left'>
+                        <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+                            <img src="/src/assets/Images/about-1-1.jpg" alt="" className='about-img' style={{ borderRadius: "20px" }} />
+                            <img src="/src/assets/Images/about-shape.png" className='about-circle' />
+                            <img src="/src/assets/Images/rotate.png" className='circle-rotate' />
+                            <img src="/src/assets/Images/star.png" className='star-icon' />
+                        </Box>
+                    </Reveal>
                 </Grid>
 
-            {/* ////////////////Grid-content/////////////////// */}
+                {/* ////////////////Grid-content/////////////////// */}
 
-                <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', px: 5 ,mt:{xs:7} }}>
-                    <span className='about-span'>About Fixyland</span>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', px: 5, mt: { xs: 7 } }}>
+                    {/* /////////////////motion animation////////////// */}
+                    <Reveal>
+                        <span className='about-span'>About Fixyland</span>
+                    </Reveal>
                     <h2 className='about-title'>
                         World Class Luxury Hotel and<br />
                         Resort Near City
@@ -55,7 +60,7 @@ function AboutSection() {
                     </Grid>
 
                     <Box sx={{ mt: 6, display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <Avatar alt="CEO & Founder" src="/src/assets/Images/user1.png"  sx={{ width: 56, height: 56 }} />
+                        <Avatar alt="CEO & Founder" src="/src/assets/Images/user1.png" sx={{ width: 56, height: 56 }} />
                         <Box>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                                 Robert L. Robinson

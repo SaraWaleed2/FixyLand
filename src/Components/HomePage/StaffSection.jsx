@@ -1,5 +1,6 @@
 import { Container, Grid, Box, } from '@mui/material';
 import StaffCard from './StaffCard';
+import Reveal from '../FramerMotion/Reveal ';
 
 function StaffSection() {
     const staff = [
@@ -23,17 +24,20 @@ function StaffSection() {
     ]
 
     return (
-        <Box sx={{ backgroundColor: 'var(--primary-color)'}}>
+        <Box sx={{ backgroundColor: 'var(--primary-color)' }}>
             <Container sx={{ height: { xs: 1800, md: 'auto' } }}>
+                {/* /////////motion animation////////////////// */}
                 <Box sx={{ pt: 8, backgroundColor: 'var(--primary-color)', height: 520 }}>
-                    <Box sx={{ textAlign: "center", mb: 6 }}>
-                        <span className='about-span'>
-                            Fixyland Staff
-                        </span>
-                        <h2 style={{ fontWeight: '800', fontSize: '35px', margin: "10px 0", color: 'white' }}>
-                            Expert Staff Persons
-                        </h2>
-                    </Box>
+                    <Reveal>
+                        <Box sx={{ textAlign: "center", mb: 6 }}>
+                            <span className='about-span'>
+                                Fixyland Staff
+                            </span>
+                            <h2 style={{ fontWeight: '800', fontSize: '35px', margin: "20px 0", color: 'white' }}>
+                                Expert Staff Persons
+                            </h2>
+                        </Box>
+                    </Reveal>
                     <Grid container spacing={2} justifyContent="space-between">
                         {
                             staff.map((staff, i) => {

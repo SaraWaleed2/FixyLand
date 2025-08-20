@@ -2,6 +2,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import Btn from "../Btn/Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBicycle, faHotTub, faSwimmer, faSpa } from "@fortawesome/free-solid-svg-icons";
+import Reveal from "../FramerMotion/Reveal ";
 
 function Services() {
     const services = [
@@ -33,21 +34,24 @@ function Services() {
 
     return (
         <Container maxWidth="xl" sx={{ py: 8, mt: 7 }}>
-            <Grid container spacing={{xs:10,md:0}}>
+            <Grid container spacing={{ xs: 10, md: 0 }}>
 
                 {/* /////////////////////////grid-info//////////////// */}
 
                 <Grid size={{ sx: 12, md: 6 }}>
-                    <Box sx={{ width: "80%", mx: "auto" }}>
-                        <span className="about-span">HOTEL SERVICES</span>
-                        <Typography variant="h4" sx={{ fontWeight: 800, fontSize: 35, my: 3 }}>
-                            Get The Best Hotel<br />
-                            Fixyland Services
-                        </Typography>
-                        <Typography variant="body1" sx={{ mb: 4, color: "var(--gray-color)" }}>
-                            Nulla vitae ex nunc. Morbi quis purus convallis, fermentum hioon metus volutpat design sodales purus. Nunc quis an mauris etion eros vulputate mattis Nulla vitae ex nunc.                        </Typography>
-                        <Btn btnContent="View All" bgColor="var(--primary-color)" hoverBgColor="black" hoverTextColor="white" btnColor="white" />
-                    </Box>
+                    {/* /////////motion animation for btn ////////////////// */}
+                    <Reveal type="slide-left">
+                        <Box sx={{ width: "80%", mx: "auto" }}>
+                            <span className="about-span">HOTEL SERVICES</span>
+                            <Typography variant="h4" sx={{ fontWeight: 800, fontSize: 35, my: 3 }}>
+                                Get The Best Hotel<br />
+                                Fixyland Services
+                            </Typography>
+                            <Typography variant="body1" sx={{ mb: 4, color: "var(--gray-color)" }}>
+                                Nulla vitae ex nunc. Morbi quis purus convallis, fermentum hioon metus volutpat design sodales purus. Nunc quis an mauris etion eros vulputate mattis Nulla vitae ex nunc.                        </Typography>
+                            <Btn btnContent="View All" bgColor="var(--primary-color)" hoverBgColor="black" hoverTextColor="white" btnColor="white" />
+                        </Box>
+                    </Reveal>
                 </Grid>
 
                 {/* /////////////////////////grid-categories//////////////// */}

@@ -1,6 +1,7 @@
 import { Box, Typography, Grid, Avatar, Stack, Card, CardMedia, Container } from '@mui/material';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import Btn from '../Btn/Btn';
+import Reveal from '../FramerMotion/Reveal ';
 
 const features = [
     {
@@ -59,41 +60,44 @@ export default function FoodDrinkSection() {
 
                 {/* //////////////////content/////////////////// */}
                 <Grid size={{ sx: 6, md: 6 }}>
-                    <Grid container spacing={3} sx={{ display: 'flex', justifyContent: "center", position: "relative" }}>
-                        <Grid size={{ xs: 6, md: 6 }} sx={{ textAlign: "center", mt: 10 }}>
-                            <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
-                                <CardMedia
-                                    component="img"
-                                    height="500"
-                                    image="/src/assets/Images/quality-food-1.jpg"
-                                    alt="Food"
-                                />
-                            </Card>
-                        </Grid>
-                        <Grid size={{ xs: 6, md: 6 }} sx={{ mt: -5 }}>
-                            <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
-                                <CardMedia
-                                    component="img"
-                                    height="500"
-                                    image="/src/assets/Images/quality-food-2.jpg"
-                                    alt="Juice"
-                                />
-                            </Card>
-                        </Grid>
+                    {/* /////////motion animation  ////////////////// */}
+                    <Reveal type='slide-right'>
+                        <Grid container spacing={3} sx={{ display: 'flex', justifyContent: "center", position: "relative" }}>
+                            <Grid size={{ xs: 6, md: 6 }} sx={{ textAlign: "center", mt: 10 }}>
+                                <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="500"
+                                        image="/src/assets/Images/quality-food-1.jpg"
+                                        alt="Food"
+                                    />
+                                </Card>
+                            </Grid>
+                            <Grid size={{ xs: 6, md: 6 }} sx={{ mt: -5 }}>
+                                <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="500"
+                                        image="/src/assets/Images/quality-food-2.jpg"
+                                        alt="Juice"
+                                    />
+                                </Card>
+                            </Grid>
 
-                        <Box sx={{ mt: 2, ml: 2, backgroundColor: "white", boxShadow: '1px 1px 1px #c1c1c1ff', p: 2, borderRadius: 2, textAlign: "center", position: "absolute", bottom: 50, right: 180, animation: 'animatedusers 3s linear infinite' }}>
-                            <Typography variant="body1" sx={{ color: 'var(--primary-color)', fontWeight: 600 }}>
-                                Popular Client
-                            </Typography>
-                            <Stack direction="row" spacing={-1.5} mt={1}>
-                                <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-4.png" sx={{ width: 45, height: 56 }} />
-                                <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-1.png" sx={{ width: 45, height: 56 }} />
-                                <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-3.png" sx={{ width: 45, height: 56 }} />
-                                <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/testimonial-user-2.png" sx={{ width: 45, height: 56 }} />
-                                <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/testimonial-user-1.png" sx={{ width: 45, height: 56 }} />
-                            </Stack>
-                        </Box>
-                    </Grid>
+                            <Box sx={{ mt: 2, ml: 2, backgroundColor: "white", boxShadow: '1px 1px 1px #c1c1c1ff', p: 2, borderRadius: 2, textAlign: "center", position: "absolute", bottom: 50, right: 180, animation: 'animatedusers 3s linear infinite' }}>
+                                <Typography variant="body1" sx={{ color: 'var(--primary-color)', fontWeight: 600 }}>
+                                    Popular Client
+                                </Typography>
+                                <Stack direction="row" spacing={-1.5} mt={1}>
+                                    <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-4.png" sx={{ width: 45, height: 56 }} />
+                                    <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-1.png" sx={{ width: 45, height: 56 }} />
+                                    <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/user-3.png" sx={{ width: 45, height: 56 }} />
+                                    <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/testimonial-user-2.png" sx={{ width: 45, height: 56 }} />
+                                    <Avatar src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/testimonial-user-1.png" sx={{ width: 45, height: 56 }} />
+                                </Stack>
+                            </Box>
+                        </Grid>
+                    </Reveal>
                 </Grid>
             </Grid>
         </Container>
