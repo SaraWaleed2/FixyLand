@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+:root {
+    --primary-color: #1f8f6a;
+    --secondary-color: #e5c466;
+    --gray-color: #6a6a6a;
+    --bg-color: #e9f0ec;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
