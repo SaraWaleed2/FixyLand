@@ -10,7 +10,7 @@ function VideoSection() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 height: '60vh',
-                backgroundImage: 'url("/src/assets/Images/video-background.jpeg")',
+                backgroundImage: 'url("/Images/video-background.jpeg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 textAlign: 'center',

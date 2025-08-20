@@ -3,13 +3,13 @@ import FeedbackCard from "./FeedbackCard";
 
 const feedbacks = [
     {
-        name: "Bella Andrew", role: "Customer", image: "/src/assets/Images/user2.jpg", rating: 4, feedback: `Special treat to dine, It was wow experience food was really delicious!
+        name: "Bella Andrew", role: "Customer", image: "/Images/user2.jpg", rating: 4, feedback: `Special treat to dine, It was wow experience food was really delicious!
         Outstanding dinner made by Master chef, food experience was unforgetable!` },
     {
-        name: "John Smith", role: "Traveler", image: "/src/assets/Images/user3.jpg", rating: 4, feedback: `Special treat to dine, It was wow experience food was really delicious!
+        name: "John Smith", role: "Traveler", image: "/Images/user3.jpg", rating: 4, feedback: `Special treat to dine, It was wow experience food was really delicious!
         Outstanding dinner made by Master chef, food experience was unforgetable!`},
     {
-        name: "Sophia Lee", role: "Guest", image: "/src/assets/Images/user4.jpg", rating: 5, feedback: `Special treat to dine, It was wow experience food was really delicious!
+        name: "Sophia Lee", role: "Guest", image: "/Images/user4.jpg", rating: 5, feedback: `Special treat to dine, It was wow experience food was really delicious!
         Outstanding dinner made by Master chef, food experience was unforgetable!` },
 ];
 

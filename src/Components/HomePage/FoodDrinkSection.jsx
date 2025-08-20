@@ -68,7 +68,7 @@ export default function FoodDrinkSection() {
                                     <CardMedia
                                         component="img"
                                         height="500"
-                                        image="/src/assets/Images/quality-food-1.jpg"
+                                        image="/Images/quality-food-1.jpg"
                                         alt="Food"
                                     />
                                 </Card>
@@ -78,7 +78,7 @@ export default function FoodDrinkSection() {
                                     <CardMedia
                                         component="img"
                                         height="500"
-                                        image="/src/assets/Images/quality-food-2.jpg"
+                                        image="/Images/quality-food-2.jpg"
                                         alt="Juice"
                                     />
                                 </Card>

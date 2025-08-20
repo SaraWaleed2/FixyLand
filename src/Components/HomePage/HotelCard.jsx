@@ -6,19 +6,19 @@ import PersonIcon from '@mui/icons-material/Person';
 function HotelCard() {
     const news = [
         {
-            imageUrl: '/src/assets/Images/blog-1.jpg',
+            imageUrl: '/Images/blog-1.jpg',
             category: 'Hotel',
             title: 'Most Expensive Hotel Rooms In New York',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',
         },
         {
-            imageUrl: '/src/assets/Images/blog-2.jpg',
+            imageUrl: '/Images/blog-2.jpg',
             category: 'Room',
             title: 'Our New Miami Beach Hotel Is Open',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',
         },
         {
-            imageUrl: '/src/assets/Images/blog-3.jpg',
+            imageUrl: '/Images/blog-3.jpg',
             category: 'Resort',
             title: 'Guests Offers Exclusive Facilities To Services',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',

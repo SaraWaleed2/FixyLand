@@ -3,11 +3,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Gallary() {
     const gallary = [
-        { img: "/src/assets/Images/room1.jpg" },
-        { img: "/src/assets/Images/room2.jpg" },
-        { img: "/src/assets/Images/room3.jpg" },
-        { img: "/src/assets/Images/room4.jpg" },
-        { img: "/src/assets/Images/room5.jpg" },
+        { img: "/Images/room1.jpg" },
+        { img: "/Images/room2.jpg" },
+        { img: "/Images/room3.jpg" },
+        { img: "/Images/room4.jpg" },
+        { img: "/Images/room5.jpg" },
     ];
 
     return (

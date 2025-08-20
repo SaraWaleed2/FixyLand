@@ -35,7 +35,7 @@ function FixedHeader({ scrolled }) {
 
                 <Box className='logo-box' sx={{ p: 1.4, backgroundColor: 'white' }}>
                     <img
-                        src="/src/assets/Images/logo.svg"
+                        src="/Images/logo.svg"
                         alt="Fixyland Logo"
                         className="logo"
                     />

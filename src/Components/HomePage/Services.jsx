@@ -10,25 +10,25 @@ function Services() {
             title: "Fitness Center",
             description: "lorem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faBicycle,
-            bg: '/src/assets/Images/services-1.jpg'
+            bg: '/Images/services-1.jpg'
         },
         {
             title: "Jacuzzi",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faHotTub,
-            bg: 't/src/assets/Images/services-2.jpg'
+            bg: 't/Images/services-2.jpg'
         },
         {
             title: "Swimming Pool",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faSwimmer,
-            bg: '/src/assets/Images/services-3.jpg'
+            bg: '/Images/services-3.jpg'
         },
         {
             title: "SPA Treatments",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faSpa,
-            bg: '/src/assets/Images/services-4.jpg'
+            bg: '/Images/services-4.jpg'
         },
     ];
 

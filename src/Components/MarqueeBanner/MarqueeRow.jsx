@@ -28,7 +28,7 @@ const items = ["Holiday Booking", "Enjoy", "Luxury Hotel", "USUI LS", "Hotel & R
                                 gap: 2,
                             }}
                         >
-                            <img src='/src/assets/Images/shape-2.svg' alt="star-banner-icon" className="banner-icon" />
+                            <img src='/Images/shape-2.svg' alt="star-banner-icon" className="banner-icon" />
                             <Typography
                                 sx={{
                                     fontSize: "2.2rem",

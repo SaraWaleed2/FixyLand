@@ -13,7 +13,7 @@ function FeedbackSection() {
                     <Box sx={{ position: "relative" }}>
                         <Box
                             component="img"
-                            src="/src/assets/Images/feedback-1.jpg"
+                            src="/Images/feedback-1.jpg"
                             alt="Hotel"
                             sx={{
                                 width: "80%",
@@ -24,7 +24,7 @@ function FeedbackSection() {
                         <Reveal type="slide-right">
                             <Box
                                 component="img"
-                                src="/src/assets/Images/feedback-2.jpg"
+                                src="/Images/feedback-2.jpg"
                                 alt="Hotel"
                                 sx={{
                                     width: "30%",
@@ -56,7 +56,7 @@ function FeedbackSection() {
                     </Box>
                 </Grid>
             </Grid>
-        </Container >
+        </Container>
     )
 }
 

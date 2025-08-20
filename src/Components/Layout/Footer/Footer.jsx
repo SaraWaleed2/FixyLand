@@ -15,7 +15,7 @@ const Footer = () => {
                     <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                         <Box
                             component="img"
-                            src="/src/assets/Images/logo.svg" // put your white logo path here
+                            src="/Images/logo.svg"
                             alt="Fixyland"
                             sx={{ width: 40, height: 40, mr: 1 }}
                         />
