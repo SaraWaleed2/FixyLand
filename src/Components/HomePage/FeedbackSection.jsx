@@ -12,7 +12,7 @@ function FeedbackSection() {
                     <Box sx={{ position: "relative" }}>
                         <Box
                             component="img"
-                            src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/image-1.jpg"
+                            src="/src/assets/Images/feedback-1.jpg"
                             alt="Hotel"
                             sx={{
                                 width: "80%",
@@ -21,7 +21,7 @@ function FeedbackSection() {
                         />
                         <Box
                             component="img"
-                            src="https://pusinfotech.com/html/fixyland/main-file/assets/images/testimonial/image-2.jpg"
+                            src="/src/assets/Images/feedback-2.jpg"
                             alt="Hotel"
                             sx={{
                                 width: "30%",

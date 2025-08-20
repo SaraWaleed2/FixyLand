@@ -30,7 +30,7 @@ function AboutSection() {
                     <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                         <img src="/src/assets/Images/about-1-1.jpg" alt="" className='about-img' style={{ borderRadius: "20px" }} />
                         <img src="/src/assets/Images/about-shape.png" className='about-circle' />
-                        <img src="https://pusinfotech.com/html/fixyland/main-file/assets/images/about/batch.png" className='circle-rotate' />
+                        <img src="/src/assets/Images/rotate.png" className='circle-rotate' />
                         <img src="/src/assets/Images/star.png" className='star-icon' />
                     </Box>
 
@@ -55,7 +55,7 @@ function AboutSection() {
                     </Grid>
 
                     <Box sx={{ mt: 6, display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <Avatar alt="CEO & Founder" src="https://pusinfotech.com/html/fixyland/main-file/assets/images/about/user.png"  sx={{ width: 56, height: 56 }} />
+                        <Avatar alt="CEO & Founder" src="/src/assets/Images/user1.png"  sx={{ width: 56, height: 56 }} />
                         <Box>
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                                 Robert L. Robinson

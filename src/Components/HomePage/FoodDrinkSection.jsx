@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Avatar, Stack, Card, CardMedia, CardContent, Container } from '@mui/material';
+import { Box, Typography, Grid, Avatar, Stack, Card, CardMedia, Container } from '@mui/material';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import Btn from '../Btn/Btn';
 
@@ -23,6 +23,8 @@ export default function FoodDrinkSection() {
 
             <Grid container spacing={2}>
 
+                {/* //////////////////header/////////////////// */}
+
                 <Grid size={{ sx: 12, md: 6 }}>
                     <span className='about-span'>
                         Food & Drink
@@ -35,7 +37,7 @@ export default function FoodDrinkSection() {
                         Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
                     </Typography>
 
-                    {/* Feature List */}
+
                     {features.map((feature, index) => (
                         <Box key={index} sx={{ display: 'flex', alignItems: 'flex-start', mb: 2, gap: 2, justifyContent: "center" }}>
                             <CheckCircleOutlineOutlinedIcon sx={{ color: "var(--primary-color)", backgroundColor: "#c0ddd2", borderRadius: "50%", mt: 1 }} />
@@ -54,6 +56,8 @@ export default function FoodDrinkSection() {
                         <Btn btnContent="Learn More Hotels" bgColor="var(--primary-color)" hoverBgColor="black" hoverTextColor="white" btnColor="white" />
                     </Box>
                 </Grid>
+
+                {/* //////////////////content/////////////////// */}
                 <Grid size={{ sx: 6, md: 6 }}>
                     <Grid container spacing={3} sx={{ display: 'flex', justifyContent: "center", position: "relative" }}>
                         <Grid size={{ xs: 6, md: 6 }} sx={{ textAlign: "center", mt: 10 }}>
@@ -61,7 +65,7 @@ export default function FoodDrinkSection() {
                                 <CardMedia
                                     component="img"
                                     height="500"
-                                    image="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/quality-food-1.jpg"
+                                    image="/src/assets/Images/quality-food-1.jpg"
                                     alt="Food"
                                 />
                             </Card>
@@ -71,13 +75,13 @@ export default function FoodDrinkSection() {
                                 <CardMedia
                                     component="img"
                                     height="500"
-                                    image="https://pusinfotech.com/html/fixyland/main-file/assets/images/quality-food/quality-food-2.jpg"
+                                    image="/src/assets/Images/quality-food-2.jpg"
                                     alt="Juice"
                                 />
                             </Card>
                         </Grid>
 
-                        <Box sx={{ mt: 2, ml: 2, backgroundColor: "white",boxShadow:'1px 1px 1px #c1c1c1ff', p: 2, borderRadius: 2, textAlign: "center", position: "absolute", bottom: 50, right: 180, animation: 'animatedusers 3s linear infinite' }}>
+                        <Box sx={{ mt: 2, ml: 2, backgroundColor: "white", boxShadow: '1px 1px 1px #c1c1c1ff', p: 2, borderRadius: 2, textAlign: "center", position: "absolute", bottom: 50, right: 180, animation: 'animatedusers 3s linear infinite' }}>
                             <Typography variant="body1" sx={{ color: 'var(--primary-color)', fontWeight: 600 }}>
                                 Popular Client
                             </Typography>

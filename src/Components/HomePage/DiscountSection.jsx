@@ -5,12 +5,12 @@ const offers = [
     {
         title: "Get 30% Off on Hotel Booking",
         discount: "30% Off",
-        image: "https://pusinfotech.com/html/fixyland/main-file/assets/images/offer/image-1.png",
+        image: "/src/assets/Images/image-offer-1.png",
     },
     {
         title: "Get 35% Off on Resort Booking",
         discount: "35% Off",
-        image: "https://pusinfotech.com/html/fixyland/main-file/assets/images/offer/image-2.png",
+        image: "/src/assets/Images/image-offer-2.png",
     },
 ];
 
