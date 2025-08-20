@@ -15,6 +15,8 @@ function StaffCard({ name, role, imageSrc }) {
     return (
         <Card sx={{ maxWidth: 345, margin: '0 auto', borderRadius: 2 }}>
             <Box sx={{ position: "relative" }}>
+
+                {/* //////////////////card-image///////////////////// */}
                 <CardMedia
                     sx={{
                         height: 321.5,
@@ -23,6 +25,8 @@ function StaffCard({ name, role, imageSrc }) {
                     image={imageSrc}
                     title={name}
                 />
+                {/* //////////////////social-button///////////////////// */}
+
                 <SpeedDial
                     ariaLabel="SpeedDial"
                     sx={{
@@ -64,6 +68,8 @@ function StaffCard({ name, role, imageSrc }) {
                 </SpeedDial>
 
             </Box>
+                {/* //////////////////card-content///////////////////// */}
+
             <CardContent>
                 <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                     {name}

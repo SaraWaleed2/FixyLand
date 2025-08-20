@@ -6,19 +6,19 @@ import PersonIcon from '@mui/icons-material/Person';
 function HotelCard() {
     const news = [
         {
-            imageUrl: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/blog/blog-1.jpg',
+            imageUrl: '/src/assets/Images/blog-1.jpg',
             category: 'Hotel',
             title: 'Most Expensive Hotel Rooms In New York',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',
         },
         {
-            imageUrl: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/blog/blog-2.jpg',
+            imageUrl: '/src/assets/Images/blog-2.jpg',
             category: 'Room',
             title: 'Our New Miami Beach Hotel Is Open',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',
         },
         {
-            imageUrl: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/blog/blog-3.jpg',
+            imageUrl: '/src/assets/Images/blog-3.jpg',
             category: 'Resort',
             title: 'Guests Offers Exclusive Facilities To Services',
             desc: 'Perspiciatis omnisite voluptat accusantium doloreque laudantium, totam aperiam.',
@@ -58,6 +58,8 @@ function HotelCard() {
                                             transition: "all 0.5s ease-in-out",
                                         }}
                                     />
+                                {/* //////////////////////////category-badge///////////////// */}
+
                                     <Box
                                         sx={{
                                             position: "absolute",
@@ -74,8 +76,9 @@ function HotelCard() {
                                     </Box>
                                 </Box>
 
+                                {/* //////////////////////////hotel-info///////////////// */}
                                 <Box sx={{ p: 2 }}>
-                                    <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 ,fontSize:25}}>
+                                    <Typography variant="h6" sx={{ fontWeight: "700", mb: 2, fontSize: 25 }}>
                                         {item.title}
                                     </Typography>
                                     <Box sx={{ display: "flex", gap: 4 }}>

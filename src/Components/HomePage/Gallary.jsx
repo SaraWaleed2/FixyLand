@@ -3,11 +3,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Gallary() {
     const gallary = [
-        { img: "https://pusinfotech.com/html/fixyland/main-file/assets/images/instagram/image-1.jpg" },
-        { img: "https://pusinfotech.com/html/fixyland/main-file/assets/images/instagram/image-2.jpg" },
-        { img: "https://pusinfotech.com/html/fixyland/main-file/assets/images/instagram/image-3.jpg" },
-        { img: "https://pusinfotech.com/html/fixyland/main-file/assets/images/instagram/image-4.jpg" },
-        { img: "https://pusinfotech.com/html/fixyland/main-file/assets/images/instagram/image-5.jpg" },
+        { img: "/src/assets/Images/room1.jpg" },
+        { img: "/src/assets/Images/room2.jpg" },
+        { img: "/src/assets/Images/room3.jpg" },
+        { img: "/src/assets/Images/room4.jpg" },
+        { img: "/src/assets/Images/room5.jpg" },
     ];
 
     return (

@@ -9,25 +9,25 @@ function Services() {
             title: "Fitness Center",
             description: "lorem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faBicycle,
-            bg: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/services/services-1.jpg'
+            bg: '/src/assets/Images/services-1.jpg'
         },
         {
             title: "Jacuzzi",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faHotTub,
-            bg: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/services/services-2.jpg'
+            bg: 't/src/assets/Images/services-2.jpg'
         },
         {
             title: "Swimming Pool",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faSwimmer,
-            bg: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/services/services-3.jpg'
+            bg: '/src/assets/Images/services-3.jpg'
         },
         {
             title: "SPA Treatments",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faSpa,
-            bg: 'https://pusinfotech.com/html/fixyland/main-file/assets/images/services/services-4.jpg'
+            bg: '/src/assets/Images/services-4.jpg'
         },
     ];
 

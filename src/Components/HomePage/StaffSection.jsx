@@ -23,39 +23,36 @@ function StaffSection() {
     ]
 
     return (
-        <Container maxWidth='xl' sx={{ height: { xs: 1800, md: 'auto' } }}>
-            <Box sx={{ pt: 8, backgroundColor: 'var(--primary-color)', height: 520 }}>
-                <Box sx={{ textAlign: "center", mb: 6 }}>
+        <Box sx={{ backgroundColor: 'var(--primary-color)'}}>
+            <Container sx={{ height: { xs: 1800, md: 'auto' } }}>
+                <Box sx={{ pt: 8, backgroundColor: 'var(--primary-color)', height: 520 }}>
+                    <Box sx={{ textAlign: "center", mb: 6 }}>
+                        <span className='about-span'>
+                            Fixyland Staff
+                        </span>
+                        <h2 style={{ fontWeight: '800', fontSize: '35px', margin: "10px 0", color: 'white' }}>
+                            Expert Staff Persons
+                        </h2>
+                    </Box>
+                    <Grid container spacing={2} justifyContent="space-between">
+                        {
+                            staff.map((staff, i) => {
+                                return (
+                                    <Grid item size={{ xs: 12, md: 3 }} key={i}>
+                                        <StaffCard
+                                            name={staff.name}
+                                            role={staff.role}
+                                            imageSrc={staff.imageSrc}
+                                        />
+                                    </Grid>
+                                )
+                            })
+                        }
 
-                    {/* ///////////////////////////header/////////////////////// */}
-
-                    <span className='about-span'>
-                        Fixyland Staff
-                    </span>
-                    <h2 style={{ fontWeight: '800', fontSize: '35px', margin: "10px 0", color: 'white' }}>
-                        Expert Staff Persons
-                    </h2>
+                    </Grid>
                 </Box>
-                
-                {/* ///////////////////////////grid-content/////////////////////// */}
-                <Grid container spacing={2} justifyContent="space-between">
-                    {
-                        staff.map((staff, i) => {
-                            return (
-                                <Grid item size={{ xs: 12, md: 3 }} key={i}>
-                                    <StaffCard
-                                        name={staff.name}
-                                        role={staff.role}
-                                        imageSrc={staff.imageSrc}
-                                    />
-                                </Grid>
-                            )
-                        })
-                    }
-
-                </Grid>
-            </Box>
-        </Container>
+            </Container>
+        </Box>
     );
 };
 
