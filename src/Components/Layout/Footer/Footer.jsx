@@ -1,4 +1,4 @@
-import {Box,Typography,Grid,TextField,IconButton,InputAdornment,Checkbox,FormControlLabel} from '@mui/material';
+import { Box, Typography, Grid, TextField, IconButton, InputAdornment, Checkbox, FormControlLabel } from '@mui/material';
 import { faBehance } from '@fortawesome/free-brands-svg-icons';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/X';
@@ -30,12 +30,13 @@ const Footer = () => {
                         <IconButton sx={{ bgcolor: '#222', '&:hover': { bgcolor: '#333' } }}><FacebookIcon sx={{ color: 'white' }} /></IconButton>
                         <IconButton sx={{ bgcolor: '#222', '&:hover': { bgcolor: '#333' } }}><TwitterIcon sx={{ color: 'white' }} /></IconButton>
                         <IconButton sx={{ bgcolor: '#222', '&:hover': { bgcolor: '#333' } }}><InstagramIcon sx={{ color: 'white' }} /></IconButton>
-                        <IconButton sx={{ bgcolor: '#222', '&:hover': { bgcolor: '#333' } }}><FontAwesomeIcon icon={faBehance} style={{ color: 'white' }}/></IconButton>
+                        <IconButton sx={{ bgcolor: '#222', '&:hover': { bgcolor: '#333' } }}><FontAwesomeIcon icon={faBehance} style={{ color: 'white' }} /></IconButton>
                     </Box>
                 </Grid>
 
 
-                {/* Explore links */}
+                {/*/////////////////////////// links//////////////////////// */}
+
                 <Grid size={{ xs: 12, md: 3 }}>
                     <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>EXPLORE</Typography>
                     {['About Hotel', 'Pricing', 'Hotel Staff', 'Latest News', 'Contact Us'].map((text) => (
@@ -45,7 +46,8 @@ const Footer = () => {
                     ))}
                 </Grid>
 
-                {/* Contact Info */}
+                {/*/////////////////////////// Contact Info//////////////////////// */}
+
                 <Grid size={{ xs: 12, md: 3 }}>
                     <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>CONTACT</Typography>
                     <Typography variant="body2" sx={{ color: '#aaa', mb: 2 }}>
@@ -57,7 +59,7 @@ const Footer = () => {
                     <Typography variant="body2" sx={{ color: '#aaa' }}>info@domain.com</Typography>
                 </Grid>
 
-                {/* Newsletter */}
+                {/*/////////////////////////// Newsletter//////////////////////// */}
                 <Grid size={{ xs: 12, md: 3 }}>
                     <Box
                         sx={{
