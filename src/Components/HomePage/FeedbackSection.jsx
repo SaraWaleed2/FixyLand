@@ -21,7 +21,7 @@ function FeedbackSection() {
                             }}
                         />
                         {/* /////////motion animation////////////////// */}
-                        <Reveal type="slide-right">
+                        <Reveal>
                             <Box
                                 component="img"
                                 src="/Images/feedback-2.jpg"
