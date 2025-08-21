@@ -16,7 +16,7 @@ function Services() {
             title: "Jacuzzi",
             description: "orem npsum dolor sit conse cteturs adipisciorem npsum dolor sit conse cteturs adipiscin",
             icon: faHotTub,
-            bg: 't/Images/services-2.jpg'
+            bg: '/Images/services-2.jpg'
         },
         {
             title: "Swimming Pool",
